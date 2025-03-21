@@ -1,0 +1,53 @@
+/* Conteneur du chef */
+.chef-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Assure que les images se placent correctement sur les petits écrans */
+    gap: 20px; /* Espacement entre les images */
+  }
+  
+  /* Style général des images */
+  .chef-image,
+  .chef2-image {
+    display: block;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 600px; /* Limite la taille maximale à 600px */
+    height: auto;
+    object-fit: cover; /* Assure que l'image est bien recadrée sans déformation */
+    transition: transform 0.3s ease-in-out; /* Ajoute une animation de zoom */
+  }
+  
+  /* Effet au survol */
+  .chef-image:hover,
+  .chef2-image:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+  }
+  
+  /* Sur les écrans de plus de 768px, définir une taille par défaut */
+  @media (min-width: 768px) {
+    .chef-image,
+    .chef2-image {
+      max-width: 45%; /* Les images prennent 45% de la largeur sur des écrans moyens */
+    }
+  }
+  
+  /* Sur les petits écrans */
+  @media (max-width: 768px) {
+    .chef-image,
+    .chef2-image {
+      max-width: 90%; /* Les images occupent 90% de la largeur sur les écrans moyens */
+    }
+  }
+  
+  /* Sur les très petits écrans */
+  @media (max-width: 480px) {
+    .chef-image,
+    .chef2-image {
+      max-width: 100%; /* Utilise toute la largeur disponible sur les petits écrans */
+    }
+  }

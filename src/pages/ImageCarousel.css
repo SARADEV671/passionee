@@ -1,0 +1,68 @@
+/* Conteneur principal du carrousel */
+.image-carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+/* Conteneur pour chaque élément du carrousel */
+.carousel-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px; /* Espace entre les images */
+}
+
+/* Style pour chaque image dans le carrousel */
+.carousel-image {
+  width: 32%; /* Chaque image occupe 32% de la largeur pour avoir 3 images côte à côte */
+  object-fit: cover; /* Assure que l'image s'adapte sans déformation */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 0 5px; /* Ajouter un petit espace entre les images */
+}
+
+/* Effet de survol pour agrandir légèrement les images */
+.carousel-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Personnalisation des contrôles (flèches de navigation) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* Couleur sombre pour les flèches */
+  border-radius: 50%; /* Flèches rondes */
+}
+
+/* Personnalisation des indicateurs (points de navigation) */
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #ff9900; /* Couleur de l'indicateur actif */
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+  .carousel-item-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-image {
+    width: 80%; /* Sur mobile, chaque image prend 80% de la largeur */
+    margin: 10px 0; /* Ajouter de l'espace verticalement entre les images */
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+  .carousel-image {
+    width: 90%; /* Sur très petit écran, les images occupent presque toute la largeur */
+  }
+}

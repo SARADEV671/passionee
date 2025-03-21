@@ -1,0 +1,18 @@
+.header-container {
+  background-color: #f8f9fa; /* bg-light */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  height: 40px; /* Garde la même taille */
+}
+
+.flag {
+  height: 40px; /* Garde la même taille */
+}
+
+.title {
+  font-family: "Leckerli One", cursive;
+  font-weight: bold;
+}

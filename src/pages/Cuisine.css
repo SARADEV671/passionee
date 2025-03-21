@@ -1,0 +1,32 @@
+.cuisine-container {
+    background-image: url(/public/fond_bois.png);
+    margin-top: 20px;
+    
+    color: white;
+  }
+  
+  .cuisine-row {
+    margin-bottom: 5rem;
+  }
+  .image-cuisine-title{
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .cuisine-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cuisine-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px; /* Optionnel : arrondir les coins des images */
+  }
+  
+  @media (max-width: 768px) {
+    .cuisine-image-container {
+      margin-top: 1rem;
+    }
+  }
