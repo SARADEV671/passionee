@@ -1,0 +1,116 @@
+/* Conteneur du chef */
+.chef {
+    background-color: black;
+  
+  }
+  
+  /* Style général des images */
+  .chef-image,
+  .chef2-image {
+   
+    transition: transform 0.3s ease-in-out; /* Ajoute une animation de zoom */
+  }
+  
+  /* Effet au survol */
+  .chef-image:hover,
+  .chef2-image:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+  }
+  .chef2-image{
+    width:75%
+  }
+/* cuisine */
+ 
+.cuisine{
+    background-image: url(./fond_bois.png); 
+  }
+  
+
+  /* Footer global */
+.footer {
+    background-color: #FDCAA3; 
+   
+  }
+  
+  .footer-bottom {
+    background-color: #605959; 
+    color: #fff; 
+  
+  }
+  /* Conteneur principal du carrousel */
+.image-carousel-container {
+    margin: 0 auto;
+  
+    border-radius: 10px;
+  }
+  
+  /* Conteneur pour chaque élément du carrousel */
+  .carousel-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; 
+  }
+  
+  /* Style pour chaque image dans le carrousel */
+  .carousel-image {
+    width: 32%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 0 5px; 
+  }
+  
+  /* Effet de survol pour agrandir légèrement les images */
+  .carousel-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Personnalisation des contrôles (flèches de navigation) */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 50%;
+  }
+  
+  /* Personnalisation des indicateurs (points de navigation) */
+  .carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #ff9900; /* Couleur de l'indicateur actif */
+  }
+  /* navBar */
+  .navbar-custom {
+    background-color: white;
+   
+    
+  }
+  
+  .navbar-brand {
+    cursor: pointer;
+  }
+  /* MAP   */
+  .map-container {
+    background-color: #C1B3B3;
+    padding: 20px;
+  }
+  /* MENU */
+  
+#menu {
+    background-color: #F2E4C0; 
+    padding: 20px;
+    border-radius: 10px;
+   
+  }
+  .menu-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Pacifico', cursive; 
+  }
+  

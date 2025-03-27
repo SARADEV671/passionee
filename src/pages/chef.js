@@ -1,29 +1,26 @@
 import React from 'react';
-import './chef.css'; 
+
 
 const Chef = () => {
   return (
-    <div className="chef-container">
-      <div className="row justify-content-center">
-       
-        {/* Image du chef à gauche */}
-        <div className="col-md-6 col-12 d-flex justify-content-center">
+    <div className="container-fluid chef">
+      <div className="row ">
+        <div className="col-md-6 col-sm-12 ">
           <img
             src="/chef.webp"
             alt="Chef"
             className="img-fluid chef-image"
-          />
-        </div>
-
-        {/* Image de la cuisine à droite */}
-        <div className="col-md-6 col-12 d-flex justify-content-center">
+            />
+            </div>
+        <div className="col-md-6  col-sm-12">
           <img
             src="/chef2.jpg"
             alt="Cuisine"
-            className="img-fluid chef2-image"
-          />
-        </div>
-      </div>
+            className="img-fluid chef2-image mt-5"
+        />
+         </div> 
+        
+         </div>
     </div>
   );
 };

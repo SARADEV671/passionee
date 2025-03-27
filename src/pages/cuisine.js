@@ -1,27 +1,27 @@
 import React from 'react';
-import './Cuisine.css'; 
 
+// my kitchen 
 const Cuisine = () => {
   return (
-    <> 
-    <div id="cuisine" className="cuisine-container">
-      <div className="row cuisine-row">
-        <div className="col-md-6 cuisine-image-container">
-          <img src="/nospain.png" className="img-fluid cuisine-image mt-5" alt="Image 1" />
+    <>
+      <div id="cuisine" className="container-fluid cuisine mt-5 mb-5">
+        <div className="row ">
+          <div className="col-6 ">
+            <img src="/nospain.png" className="img-fluid mt-4 " alt="nos paints" />
+          </div>
+          <div className="col-6 ">
+            <img src="/nosdesserts.png" className="img-fluid mt-4 " alt="nos dessert" />
+          </div>
         </div>
-        <div className="col-md-6 cuisine-image-container">
-          <img src="/nosdesserts.png" className="img-fluid cuisine-image mt-5" alt="Image 2" />
+        <div className="row ">
+          <div className="col-6 ">
+            <img src="/notresalle.png" className="img-fluid mt-4" alt="notre salle" />
+          </div>
+          <div className="col-6 ">
+            <img src="/NotreCarte.png" className="img-fluid mt-4 " alt="notre carte" />
+          </div>
         </div>
       </div>
-      <div className="row m-0 p-0">
-        <div className="col-md-6 cuisine-image-container">
-          <img src="/notresalle.png" className="img-fluid cuisine-image" alt="Image 1" />
-        </div>
-        <div className="col-md-6 cuisine-image-container">
-          <img src="/NotreCarte.png" className="img-fluid cuisine-image" alt="Image 2" />
-        </div>
-      </div>
-    </div>
     </>
   );
 };
